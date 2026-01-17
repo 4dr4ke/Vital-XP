@@ -37,46 +37,27 @@ public class VitalXPCommand {
                                     if (source.getEntity() instanceof ServerPlayer player) {
 
                                         player.sendSystemMessage(Component.literal("")
-                                                // title
-                                                .append(Component.literal("=== VITAL XP COMMANDS ===\n")
-                                                        .withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD))
+                                                .append(Component.literal("=== VITAL XP COMMANDS ===\n").withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD))
 
-                                                // help
-                                                .append(Component.literal("\n/vitalxp help\n")
-                                                        .withStyle(ChatFormatting.YELLOW))
-                                                .append(Component.literal("  Show this help menu\n")
-                                                        .withStyle(ChatFormatting.GRAY))
+                                                .append(Component.literal("\n/vitalxp help\n").withStyle(ChatFormatting.YELLOW))
+                                                .append(Component.literal("  Show this help menu\n").withStyle(ChatFormatting.GRAY))
 
-                                                // set
-                                                .append(Component.literal("\n/vitalxp set <param> <value>\n")
-                                                        .withStyle(ChatFormatting.YELLOW))
-                                                .append(Component.literal("  Change a VitalXP configuration value\n")
-                                                        .withStyle(ChatFormatting.GRAY))
+                                                .append(Component.literal("\n/vitalxp set <param> <value>\n").withStyle(ChatFormatting.YELLOW))
+                                                .append(Component.literal("  Change a VitalXP configuration value\n").withStyle(ChatFormatting.GRAY))
 
-                                                // params
-                                                .append(Component.literal("\nAvailable parameters:\n")
-                                                        .withStyle(ChatFormatting.AQUA))
+                                                .append(Component.literal("\nAvailable parameters:\n").withStyle(ChatFormatting.AQUA))
 
-                                                .append(Component.literal(" • minHealth\n")
-                                                        .withStyle(ChatFormatting.WHITE))
-                                                .append(Component.literal("   Minimum health at level 0 (half-hearts ×2)\n")
-                                                        .withStyle(ChatFormatting.DARK_GRAY))
+                                                .append(Component.literal(" • minHealth\n").withStyle(ChatFormatting.WHITE))
+                                                .append(Component.literal("   Minimum health at level 0 (half-hearts ×2)\n").withStyle(ChatFormatting.DARK_GRAY))
 
-                                                .append(Component.literal(" • maxHealth\n")
-                                                        .withStyle(ChatFormatting.WHITE))
-                                                .append(Component.literal("   Maximum possible health (half-hearts ×2)\n")
-                                                        .withStyle(ChatFormatting.DARK_GRAY))
+                                                .append(Component.literal(" • maxHealth\n").withStyle(ChatFormatting.WHITE))
+                                                .append(Component.literal("   Maximum possible health (half-hearts ×2)\n").withStyle(ChatFormatting.DARK_GRAY))
 
-                                                .append(Component.literal(" • levelsPerHeart\n")
-                                                        .withStyle(ChatFormatting.WHITE))
-                                                .append(Component.literal("   XP levels required to gain one heart\n")
-                                                        .withStyle(ChatFormatting.DARK_GRAY))
+                                                .append(Component.literal(" • levelsPerHeart\n").withStyle(ChatFormatting.WHITE))
+                                                .append(Component.literal("   XP levels required to gain one heart\n").withStyle(ChatFormatting.DARK_GRAY))
 
-                                                // locked hearts
-                                                .append(Component.literal("\n/vitalxp lockedHearts <true | false>\n")
-                                                        .withStyle(ChatFormatting.YELLOW))
-                                                .append(Component.literal("  Enable or disable locked hearts system\n")
-                                                        .withStyle(ChatFormatting.GRAY))
+                                                .append(Component.literal("\n/vitalxp lockedHearts <true | false>\n").withStyle(ChatFormatting.YELLOW))
+                                                .append(Component.literal("  Enable or disable locked hearts system\n").withStyle(ChatFormatting.GRAY))
                                         );
                                     }
                                     return 1;
